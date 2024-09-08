@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --primary-color: #F87C56;
+    --secondary-dark:#7F7F8A;
+    --dark:#141416;
+    --offwhite: #f5f5f5;
+
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+.top-header{
+    background-color: var(--offwhite);
+}
+
+.top-header li{
+    display: flex;
+    flex: 1 0 0%;
+    font-size: 14px;
+
+}
+.top-header li span {
+    display: block;
+    max-width: 20px;
+    height: 1px;
+    background-color: var(--secondary-dark);
+    padding: 0px 11px;
+    margin: 0px 21px;
+}
+.navbar-brand img{
+    max-width: 156px;
+}
+.navbar-nav{}
+.navbar-nav li{}
+.navbar-nav li a{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.navbar-nav li a:active,
+.navbar-nav li a:hover{
+    color: var(--primary-color) !important;
+}
+
+.carousel-inner .carousel-item{
+    position: relative;
+}
+.carousel-inner .carousel-item .carousel-caption{
+    position: absolute;
+    right: auto;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    max-width: 460px;
+    text-align: left;
+}
+.carousel-inner .carousel-item .carousel-caption h5{
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 300;
+}
+.carousel-inner .carousel-item .carousel-caption h2{
+    font-size: 120px;
+    line-height: 80%;
+}
+.carousel-inner .carousel-item .carousel-caption a{
+    font-size: 17px;
+    color: var(--offwhite);
+    text-transform: uppercase;
+}
+.carousel-inner .carousel-item .carousel-caption a:hover svg path{
+    
+    stroke: var(--dark);
+}
+.carousel-inner .carousel-item .carousel-caption a:hover{
+    
+    color: var(--dark);
+}
+.brandsection{ 
+    padding: 40px 0;
+}
+.brandsection .brand{
+    text-align: center;
+}
+.brandsection .brand img{
+    height: 30px;
+}
+.collectionsection{
+    padding: 100px 0;
+}
+.colection img{
+    filter: grayscale(1);
+}
+.colection.featured img{
+    filter: grayscale(0);
+}
+.collection a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: #ffff;
+    text-decoration: none;
+}
+.collection.featured a path{
+    stroke: var(--primary-color);
+}
+.collection{
+    height: 100%;
+    
+}
+.collection.featured a{
+    justify-content: center;
+    color: var(--primary-color);
+    background-color: #fff;
+    width: auto;
+    left: 50%;
+    bottom: 35%;
+    transform: translate(-50%,35%);
+    gap:10px ;
+}
+.collection.featured a :hover path{
+    stroke: var(--offwhite);
+}
+.collection.featured a :hover{
+    background-color: var(--primary-color);
+    color: var(--offwhite);
+}
+.collection.featured h2{
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(50%);
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ollectiontab{
+    padding: 50px 0 200px;
+}
+.nav-pills .nav-link.active, .nav-pills .show .nav-link{
+  
+    font-size: 16px;
+    background-color: transparent;
+    color:var(--dark);
+    border-bottom: 3px solid var(--dark);
+    border-radius: 0;
+}
+.nav-pills .nav-link{
+    border-radius: var(--bs-nav-pills-border-radius);
+    color: #767677;
+}
+.viewall{
+ position: absolute; 
+ right: 0;  
+ transform: translateY(50%);
+ color: var(--dark);
+ text-transform: uppercase;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+
+}
+.viewal path{
+    stroke: var(--dark);
+}
+.collectiontab.carousel-control-next-icon{
+    background-image:url("../images/icon left.svg")!important;
+}
+.collectiontab.carousel-control-prev-icon,
+.collectiontab.carousel-control-next-icon{
+    width: 25px;
+    height: 25px;
+}
+.collectiontab.wishlist{
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+
+
